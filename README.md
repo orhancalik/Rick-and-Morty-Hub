@@ -55,7 +55,7 @@ Dit is een mobiele applicatie gemaakt met [Expo](https://expo.dev) & [React Nati
 
 ---
 
-## 📌 Handig voor AP Hogeschool
+## 📌 Handige tools
 
 - **Dark/Light switch:** Elke pagina past zich automatisch aan het thema aan.
 - **Favorieten vind je nu via je profiel-tab.**
