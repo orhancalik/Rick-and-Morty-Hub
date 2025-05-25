@@ -1,4 +1,4 @@
-# Rick & Morty Universe Explorer 🚀
+# Rick & Morty Hub 🚀
 
 Dit is een mobiele applicatie gemaakt met [Expo](https://expo.dev) & [React Native](https://reactnative.dev/) waarmee je alle personages, afleveringen en locaties uit het Rick & Morty-universum kunt verkennen en beheren.
 
