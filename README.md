@@ -4,15 +4,15 @@ Dit is een mobiele applicatie gemaakt met [Expo](https://expo.dev) & [React Nati
 
 ---
 
-## Features
+## ✨ Features
 
-- **Personage Verkenner**: Blader door alle personages uit de serie
-- **Locatie Browser**: Ontdek alle locaties uit het multiversum
-- **Afleveringengids**: Bekijk informatie over elke aflevering
-- **Persoonlijk Profiel**: Volg je voortgang en verzamel badges
-- **Portal Reizen**: Spring naar willekeurige delen van de app
-- **Quizzen**: Test je Rick & Morty kennis
-- **Achievements**: Verdien XP en ontgrendel beloningen
+- 🧠 **Personage Verkenner**: Blader door alle personages uit de serie
+- 🌌 **Locatie Browser**: Ontdek alle locaties uit het multiversum
+- 📺 **Afleveringengids**: Bekijk informatie over elke aflevering
+- 👤 **Persoonlijk Profiel**: Volg je voortgang en verzamel badges
+- 🌀 **Portal Reizen**: Spring naar willekeurige delen van de app
+- 🎮 **Quizzen**: Test je Rick & Morty kennis
+- 🏆 **Achievements**: Verdien XP en ontgrendel beloningen
 
 ---
 
