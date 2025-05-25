@@ -83,7 +83,7 @@ export default function FavoritesScreen() {
         />
         <Text style={styles.headText}>Mijn profielfoto</Text>
       </View>
-      {/* Lijst met favoriete karakters */}
+
       <Text style={styles.title}>Favorieten</Text>
       <FlatList
         data={favorites}

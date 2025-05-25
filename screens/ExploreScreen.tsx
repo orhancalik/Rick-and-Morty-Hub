@@ -6,9 +6,18 @@ import LocationsScreen from "./LocationsScreen";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useTheme } from "../theme/ThemeContext";
 import { DarkThemeColors, LightThemeColors } from "../theme/colors";
+import { TouchableOpacity, Text, StyleSheet } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
+import { StackNavigationProp } from "@react-navigation/stack";
+import { RootStackParamList } from "../App";
+
 const ExploreTab = createMaterialTopTabNavigator();
 
-export default function ExploreScreen() {
+type ExploreScreenProps = {
+  navigation: StackNavigationProp<RootStackParamList>;
+};
+
+export default function ExploreScreen({ navigation }: ExploreScreenProps) {
   const { theme } = useTheme();
   const colors = theme === "dark" ? DarkThemeColors : LightThemeColors;
 
@@ -29,3 +38,20 @@ export default function ExploreScreen() {
     </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  mapButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#007AFF",
+    padding: 10,
+    borderRadius: 5,
+    margin: 10,
+  },
+  mapButtonText: {
+    color: "#fff",
+    marginLeft: 5,
+    fontSize: 16,
+  },
+});

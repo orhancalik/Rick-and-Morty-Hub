@@ -14,8 +14,10 @@ export type Episode = {
   id: number;
   name: string;
   air_date: string;
-  episode: number;
-  season: number;
+  episode: string;
+  season: string;
+  characters: number[];
+  // Any other properties your episodes have
 };
 
 export type Location = {

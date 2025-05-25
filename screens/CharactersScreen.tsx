@@ -55,7 +55,6 @@ export default function CharactersScreen() {
     c.name.toLowerCase().includes(search.toLowerCase())
   );
 
-  // Dynamische styles gebaseerd op het actieve theme
   const dynamicStyles = StyleSheet.create({
     container: { flex: 1, backgroundColor: colors.background, padding: 14 },
     title: {
@@ -111,10 +110,9 @@ export default function CharactersScreen() {
 
   return (
     <View style={dynamicStyles.container}>
-      {/* Theme schakelaar-knop */}
       <TouchableOpacity style={dynamicStyles.themeToggle} onPress={toggleTheme}>
         <Text style={dynamicStyles.themeToggleText}>
-          {theme === "dark" ? "Licht modus" : "Donker modus"}
+          {theme === "dark" ? "Light mode" : "Dark mode"}
         </Text>
       </TouchableOpacity>
 

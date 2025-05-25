@@ -1,12 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { View, FlatList, Text, StyleSheet } from "react-native";
+import {
+  View,
+  FlatList,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+} from "react-native";
 import { Location } from "../types";
 import { useTheme } from "../theme/ThemeContext";
 import { LightThemeColors, DarkThemeColors } from "../theme/colors";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { Ionicons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
+
 export default function LocationsScreen() {
   const [locations, setLocations] = useState<Location[]>([]);
-
+  const navigation = useNavigation();
   const { theme } = useTheme();
   const colors = theme === "dark" ? DarkThemeColors : LightThemeColors;
 
@@ -24,6 +32,21 @@ export default function LocationsScreen() {
       fontWeight: "bold",
       marginBottom: 14,
     },
+    mapButton: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+      backgroundColor: colors.highlight,
+      padding: 12,
+      borderRadius: 8,
+      marginBottom: 16,
+    },
+    mapButtonText: {
+      color: "#fff",
+      fontWeight: "bold",
+      marginLeft: 8,
+      fontSize: 16,
+    },
     item: {
       backgroundColor: colors.card,
       marginVertical: 5,
@@ -37,6 +60,15 @@ export default function LocationsScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Locations</Text>
+
+      <TouchableOpacity
+        style={styles.mapButton}
+        onPress={() => navigation.navigate("LocationMap" as never)}
+      >
+        <Ionicons name="map-outline" size={24} color="#fff" />
+        <Text style={styles.mapButtonText}>Explore Locations</Text>
+      </TouchableOpacity>
+
       <FlatList
         data={locations}
         keyExtractor={(l) => l.id?.toString()}
