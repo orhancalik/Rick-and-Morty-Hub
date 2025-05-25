@@ -4,15 +4,15 @@ Dit is een mobiele applicatie gemaakt met [Expo](https://expo.dev) & [React Nati
 
 ---
 
-## ✨ Functionaliteiten
+## Features
 
-- **Verkennen:** Combineer Karakters, Episodes & Locaties in één overzichtelijke "Explore"-tab.
-- **Portal:** Ga via een centrale "Portal"-knop willekeurig naar verschillende plekken in de app, met geluid en animatie.
-- **Favorieten & Profiel:** Upload je eigen profielfoto en sla favorieten karakters eenvoudig op via je profiel-tab.
-- **Eigen karakters toevoegen:** Voeg zelf karakters toe door naam, origine en een afbeelding te selecteren.
-- **Dark & Light theme:** Direct wisselen tussen een lichte en donkere modus met behoud van branding.
-- **Confetti & Notificaties:** Je wordt met confetti en een lokale push notificatie beloond bij het toevoegen van favorieten.
-- **Zoek & Pull-to-refresh:** Vind karakters makkelijk terug en refresh altijd de nieuwste API-data.
+- **Personage Verkenner**: Blader door alle personages uit de serie
+- **Locatie Browser**: Ontdek alle locaties uit het multiversum
+- **Afleveringengids**: Bekijk informatie over elke aflevering
+- **Persoonlijk Profiel**: Volg je voortgang en verzamel badges
+- **Portal Reizen**: Spring naar willekeurige delen van de app
+- **Quizzen**: Test je Rick & Morty kennis
+- **Achievements**: Verdien XP en ontgrendel beloningen
 
 ---
 
@@ -67,7 +67,7 @@ Dit is een mobiele applicatie gemaakt met [Expo](https://expo.dev) & [React Nati
 
 ## 👨‍💻 Auteur
 
-Orhan Çalık  
+Orhan Calık  
 AP Hogeschool, 2025
 
 ---
